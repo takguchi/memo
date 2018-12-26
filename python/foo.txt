@@ -1,2 +1,5 @@
 Hello world!!!
 こんにちは！！！
+python
+study
+good luck!!!
