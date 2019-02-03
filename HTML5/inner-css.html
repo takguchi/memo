@@ -21,10 +21,34 @@
       text-decoration: underline;
     }
     .first-section {
-      background: pink;
+      background: #FA58F4;
+      width: 30%;
+      float: right;
     }
     .second-section {
       background: yellow;
+      width: 30%;
+      float: left;
+    }
+    .third-section {
+      background: lightgreen;
+      width: 30%;
+      position: relative;
+      left: 200px;
+      top: 20px;
+      z-index: 1;
+    }
+    .fourth-section {
+      background: #5CACEA;
+      width: 30%;
+      position: relative;
+      left: 100px;
+      top: -20px;
+      z-index: 2;
+      opacity: 0.8;
+    }
+    .clear-float {
+      clear: both;
     }
   </style>
 </head>
@@ -39,6 +63,26 @@
     <p>今回は、新しくリリースするプロダクトの紹介をします。</p>
     <p class="blue">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
     <p id="green">このVRゴーグルは従来品より<span class="underlined">解像度が高く</span>なっています。</p>
+  </div>
+  <p>Third Paragraph</p>
+  <p>Fourth Paragraph</p>
+  <div class="clear-float">
+    <p>Fifth Paragraph</p>
+  </div>
+  <hr>
+  <div class="third-section">
+    <p>こんにちは</p>
+    <p>皆さんごきげんよう</p>
+  </div>
+  <div class="fourth-section">
+    <p>今回は、新しくリリースするプロダクトの紹介をします。</p>
+    <p class="blue">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
+    <p id="green">このVRゴーグルは従来品より<span class="underlined">解像度が高く</span>なっています。</p>
+  </div>
+  <p>Third Paragraph</p>
+  <p>Fourth Paragraph</p>
+  <div class="clear-float">
+    <p>Fifth Paragraph</p>
   </div>
 </body>
 </html>
