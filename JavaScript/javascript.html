@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+</head>
+<body>
+  <button onClick="alert('Hi Rob!')">Click first</button>
+  <hr>
+  <p id="text">Hello World!</p>
+  <button id="myButton">Click second</button>
+  <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+      //alert("ボタンがクリックされました！");
+      document.getElementById("text").innerHTML = "クリックしましたね！";
+    }
+  </script>
+
+  <hr>
+  <p id="para">JavaScriptは、</p>
+  <button id="appendButton">Click second</button>
+  <script type="text/javascript">
+    document.getElementById("appendButton").onclick = function () {
+      // 文字列を追記する
+      document.getElementById("para").innerHTML += "ブラウザでもサーバサイドでも動作するプログラミング言語です。";
+    }
+  </script>
+</body>
+</html>

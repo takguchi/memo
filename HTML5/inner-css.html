@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>inner css</title>
+  <style type="text/css">
+    p {
+      color:grey;
+      font-size:100%;
+      font-family: sans-serif;
+    }
+    h1 {
+      color:purple;
+    }
+    .blue {
+      color:blue;
+    }
+    #green {
+      color:green;
+    }
+    .underlined {
+      text-decoration: underline;
+    }
+    .first-section {
+      background: #FA58F4;
+      width: 30%;
+      float: right;
+    }
+    .second-section {
+      background: yellow;
+      width: 30%;
+      float: left;
+    }
+    .third-section {
+      background: lightgreen;
+      width: 30%;
+      position: relative;
+      left: 200px;
+      top: 20px;
+      z-index: 1;
+    }
+    .fourth-section {
+      background: #5CACEA;
+      width: 30%;
+      position: relative;
+      left: 100px;
+      top: -20px;
+      z-index: 2;
+      opacity: 0.8;
+    }
+    .fifth-section {
+      background: #FA58F4;
+      width: 30%;
+      height: 650px;
+      position: absolute;
+      left: 300px;
+      top: 200px;
+    }
+    .sixth-section {
+      background: yellow;
+      width: 20%;
+      top: 400px;
+      left: 550px;
+      position: fixed;
+    }
+    .seventh-section {
+      background: #FA58F4;
+      width: 30%;
+      margin: 100px;
+      padding: 20px;
+    }
+    .eighth-section {
+      background: yellow;
+      width: 30%;
+      margin: 50px 50px 100px;
+      padding-top: 20px;
+      padding-left: 100px;
+      padding-right: 30px;
+      padding-bottom: 10px;
+    }
+    .clear-float {
+      clear: both;
+    }
+    .square {
+      width: 100px;
+      height: 100px;
+      margin: 40px;
+      float: left;
+    }
+    #square-red {
+      background-color: red;
+      border: 3px grey solid;
+    }
+    #square-blue {
+      background-color: lightblue;
+      border: 5px black;
+      border-style: solid double dotted dashed;
+      border-width: 10px 5px 2px 1px;
+    }
+    #square-green {
+      background-color: green;
+      border-radius: 50%;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #D8D8D8;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="blue">内部CSS</h1>
+  <hr>
+  <div class="first-section">
+    <p>こんにちは</p>
+    <p>皆さんごきげんよう</p>
+  </div>
+  <div class="second-section">
+    <p>今回は、新しくリリースするプロダクトの紹介をします。</p>
+    <p class="blue">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
+    <p id="green">このVRゴーグルは従来品より<span class="underlined">解像度が高く</span>なっています。</p>
+  </div>
+  <p>Third Paragraph</p>
+  <p>Fourth Paragraph</p>
+  <div class="clear-float">
+    <p>Fifth Paragraph</p>
+  </div>
+  <hr>
+  <div class="third-section">
+    <p>こんにちは</p>
+    <p>皆さんごきげんよう</p>
+  </div>
+  <div class="fourth-section">
+    <p>今回は、新しくリリースするプロダクトの紹介をします。</p>
+    <p class="blue">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
+    <p id="green">このVRゴーグルは従来品より<span class="underlined">解像度が高く</span>なっています。</p>
+  </div>
+  <p>Third Paragraph</p>
+  <p>Fourth Paragraph</p>
+  <div class="clear-float">
+    <p>Fifth Paragraph</p>
+  </div>
+  <hr>
+  <div class="fifth-section">
+    <p>こんにちは</p>
+    <p>皆さんごきげんよう</p>
+  </div>
+  <div class="sixth-section">
+    <p>今回は、新しくリリースするプロダクトの紹介をします。</p>
+    <p class="blue">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
+    <p id="green">このVRゴーグルは従来品より<span class="underlined">解像度が高く</span>なっています。</p>
+  </div>
+  <hr>
+  <div class="seventh-section">
+    <p>こんにちは</p>
+    <p>皆さんごきげんよう</p>
+  </div>
+  <div class="eighth-section">
+    <p>今回は、新しくリリースするプロダクトの紹介をします。</p>
+    <p class="blue">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
+    <p id="green">このVRゴーグルは従来品より<span class="underlined">解像度が高く</span>なっています。</p>
+  </div>
+  <p>Sixth Paragraph</p>
+  <hr>
+  <div id="square-red" class="square"></div>
+  <div id="square-blue" class="square"></div>
+  <div id="square-green" class="square"></div>
+</body>
+</html>
